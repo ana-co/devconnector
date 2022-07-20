@@ -1,5 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://anaco:NG9GS2l8jXzYsQ5T@devconnector.nrbzb.mongodb.net/?retryWrites=true&w=majority",
-  "jwtSecret": "chemisaidumlo",
-  "githubToken": "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"
-}
