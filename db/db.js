@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
-import config from 'config';
+// import config from 'config';
 
 const connectDB = async () => {
   try {
-    const url = config.get('mongoURI');
-    await mongoose.connect(url);
+    // const url = config.get('mongoURI');
+    await mongoose.connect(process.env.MONGO_URL);
     console.log('MongoDB Connected...');
   } catch (err) {
     console.error(err.message);
