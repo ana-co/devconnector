@@ -27,6 +27,9 @@ import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 
+import PreVideoCall from './components/call/PreVideoCall';
+import Room from './components/call/Room';
+
 import store from './store';
 import { loadUser } from './actions/auth';
 
@@ -38,6 +41,9 @@ if (localStorage.token) {
 
 const App = () => {
   useEffect(() => {
+    // window.process = {
+    //   ...window.process,
+    // };
     store.dispatch(loadUser());
   }, []);
 
@@ -52,6 +58,8 @@ const App = () => {
           <Route path="login" element={<Login />} />
           <Route path="profiles" element={<Profiles />} />
           <Route path="profile/:id" element={<Profile />} />
+          <Route path=":id/call" element={<PreVideoCall />} />
+          <Route path="room/:id" element={<PrivateRoute component={Room} />} />
           <Route
             path="dashboard"
             element={<PrivateRoute component={Dashboard} />}
