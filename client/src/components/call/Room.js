@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { SocketContext } from '../../Context';
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect } from 'react';
 import {
   Grid,
   Typography,
