@@ -14,6 +14,9 @@
   "author": "Ana Davitashvili",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.1",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.7",
     "cors": "^2.8.5",
